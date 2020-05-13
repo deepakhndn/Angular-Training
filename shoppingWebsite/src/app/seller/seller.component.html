@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>    
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" [routerLink] ="['/home']">Shopping Site</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 800px;">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+            </ul>
+        </div>                                       
+    </nav>
+</div>
+<div style="text-align: center;">
+    <h2>Welcome to Shopping site</h2>
+    <p>Review your products</p>
+</div>
+
+<div class="stock">
+    <h4>Total products is stock: totalNumberOfItems</h4>
+</div>
+
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Number of item on sale</h5>
+      <p class="card-text">itemOnSale</p>
+    </div>
+  </div>
+  
+  <div>
+    <div style="margin-left: 20px; margin-top: 20px;">
+        <button routerLink="/seller/addProduct" class="btn btn-primary">Add Product</button><br><br>
+        <button routerLink="/seller/viewProduct"  class="btn btn-primary">View Product</button>
+    </div>
+  </div>
+    
+</body>
+</html>

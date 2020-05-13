@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>    
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" [routerLink] ="['/home']">Shopping Site</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 800px;">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+            </ul>
+        </div>                                       
+    </nav>
+</div>
+<div>
+    <h3 style="text-align: center;">Add your products here</h3>
+</div>
+<form> <!-- [formGroup]="form" (ngSubmit)="onSubmit()" -->
+    <div class="form-group">
+        <strong for="procuctName">Product name : </strong>
+        <input id="productName" type="text" placeholder="product name">
+    </div><br>
+    <div class="form-group">
+        <strong for="productId">Product Id : </strong>
+        <input id="productId" type="number" placeholder="product id">
+    </div><br>
+    <div class="form-group">
+        <strong for="description">Description : </strong>
+        <input id="description" type="text" placeholder="description">
+    </div><br>
+    <div class="form-group">
+        <strong for="mrp">MRP of Product : </strong>
+        <input id="mrp" type="number" placeholder="mrp">
+    </div><br>
+    <div class="form-group">
+        <strong for="salePrice">Sale Price : </strong>
+        <input id="salePrice" type="number" placeholder="sale price">
+    </div><br>
+    <div class="form-group">
+        <strong for="quantity">Quantity : </strong>
+        <input id="quantity" type="number" placeholder="quantity">
+    </div>
+    <div class="form-group">
+        <strong for="onSale">OnSale : </strong>
+        <div>
+          <div class="form-check">
+             <input formControlName="onSale" type="radio" name="onSale" id="onSaleButton" value="yes">
+             <label for="exampleRadios1">Yes</label>
+          </div>
+          <div class="form-check">
+             <input  formControlName="onSale" type="radio" name="onSale" id="onSaleButton" value="no">
+             <label  for="exampleRadios2">No</label>
+          </div>
+        </div>
+      
+      </div><br>
+    <div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn btn-primary" type="submit">Reset</button>
+    </div>
+</form>
+  
+    
+</body>
+</html>

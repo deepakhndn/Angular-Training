@@ -1,0 +1,16 @@
+.title
+    {
+        border: 2px solid black;
+        height: 100px;
+    }
+.signin
+    {
+        float: right;
+    }
+
+.stock
+{
+    height: 100px;
+    width: 100%;
+    border: 2px solid black;
+}    
